@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int num, temp, rem, sum=0;
+    printf("Given number is a check to Armstrong Number or Not :");
+    scanf("%d",&num);
+    temp = num;
+    while(num>0){
+        rem = num%10;
+        sum = sum+rem*rem*rem;
+        num = num/10;
+    }
+    if(temp==sum){
+        printf("The %d Number is a Armstrong Number",sum);
+    }
+    else{
+        printf("The %d Number is Not a Armstrong Number",sum);
+    }
+    
+    return 0;
+}
