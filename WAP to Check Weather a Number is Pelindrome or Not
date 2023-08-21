@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int  num, rem, rev=0, temp;
+    printf("Enter a Number to check the Pelindrome or Not :\n");
+    scanf("%d",&num);
+    temp=num;
+    while(num>0){
+        rem = num%10;
+        rev = rev*10+rem;
+        num=num/10;
+    }
+    printf("The Reverse Number is %d\n",rev);
+    if(temp==rev){
+        printf("The Number is Pelindrome");
+    }
+    else{
+        printf("The Number is Not a Pelindrome");
+    }
+    return 0;
+}
